@@ -7,9 +7,16 @@ class Node {
 
 class LinkedList {
   constructor() {
-    this.value = null;
+    this.nodo = null;
+  }
+  append(value) {
+    if (this.nodo === null){
+      this.nodo = new Node(value);
+    }
   }
 }
 
+const lista = new LinkedList()
 
+lista.append("aaa");
 
