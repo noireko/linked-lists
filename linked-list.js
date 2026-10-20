@@ -41,6 +41,17 @@ class LinkedList {
     if (actual === null) return undefined;
     if (actual !== null) return actual.value;
   }
+  tail() {
+    let actual = this.nodo;
+    if (actual === null) {
+      return actual.value;
+    } else {
+      while (actual !== null) {
+        if (actual.nextNode === null) return actual.value;
+        actual = actual.nextNode;
+      }
+    }
+  }
 }
 
 const lista = new LinkedList()
