@@ -28,12 +28,10 @@ class LinkedList {
   size() {
     let nodos = 0;
     let actual = this.nodo;
-
     while (actual !== null) {
       nodos++;
       actual = actual.nextNode;
     }
-
     return nodos;
   }
   head() {
@@ -43,14 +41,26 @@ class LinkedList {
   }
   tail() {
     let actual = this.nodo;
-
     if (actual === null) return undefined;
-
     while (actual.nextNode !== null) {
       actual = actual.nextNode;
     }
-
     return actual.value;
+  }
+  at(index) {
+    let iteracion = -1;
+    let valorIndex = undefined;
+    let actual = this.nodo;
+    while (iteracion !== index) {
+      if (actual !== null) {
+        valorIndex = actual.value;
+        iteracion++;
+        actual = actual.nextNode;
+      } else {
+        return undefined;
+      }
+    }
+    return valorIndex;
   }
 }
 
