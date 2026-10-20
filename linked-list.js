@@ -1,12 +1,15 @@
 class Node {
-    constructor() {
-        this.value = null;
-        this.nextNode = null;
-    }
+  constructor(value = null, nextNode = null) {
+    this.value = value;
+    this.nextNode = nextNode;
+  }
 }
 
-class LinkedList extends Node {
-    append(value) {
-        
-    }
+class LinkedList {
+  constructor() {
+    this.value = null;
+  }
 }
+
+
+
