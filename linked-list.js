@@ -14,11 +14,9 @@ class LinkedList {
       this.nodo = new Node(value);
     } else {
       let actual = this.nodo;
-
       while (actual.nextNode !== null) {
         actual = actual.nextNode;
       }
-
       actual.nextNode = new Node(value);
     }
   }
