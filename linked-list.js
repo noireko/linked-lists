@@ -43,14 +43,14 @@ class LinkedList {
   }
   tail() {
     let actual = this.nodo;
-    if (actual === null) {
-      return undefined;
-    } else {
-      while (actual !== null) {
-        if (actual.nextNode === null) return actual.value;
-        actual = actual.nextNode;
-      }
+
+    if (actual === null) return undefined;
+
+    while (actual.nextNode !== null) {
+      actual = actual.nextNode;
     }
+
+    return actual.value;
   }
 }
 
