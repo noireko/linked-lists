@@ -48,19 +48,17 @@ class LinkedList {
     return actual.value;
   }
   at(index) {
-    let iteracion = -1;
+    let iteracion = 0;
     let valorIndex = undefined;
     let actual = this.nodo;
-    while (iteracion !== index) {
-      if (actual !== null) {
-        valorIndex = actual.value;
+    while (actual !== null) {
+      if (iteracion === index) {
+        return actual.value;
+      } else {
         iteracion++;
         actual = actual.nextNode;
-      } else {
-        return undefined;
       }
     }
-    return valorIndex;
   }
 }
 
