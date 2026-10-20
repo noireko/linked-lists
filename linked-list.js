@@ -44,7 +44,7 @@ class LinkedList {
   tail() {
     let actual = this.nodo;
     if (actual === null) {
-      return actual.value;
+      return undefined;
     } else {
       while (actual !== null) {
         if (actual.nextNode === null) return actual.value;
