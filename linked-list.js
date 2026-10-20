@@ -49,7 +49,6 @@ class LinkedList {
   }
   at(index) {
     let iteracion = 0;
-    let valorIndex = undefined;
     let actual = this.nodo;
     while (actual !== null) {
       if (iteracion === index) {
@@ -59,6 +58,7 @@ class LinkedList {
         actual = actual.nextNode;
       }
     }
+    return undefined;
   }
 }
 
