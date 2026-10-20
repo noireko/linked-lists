@@ -25,6 +25,19 @@ class LinkedList {
     nuevoNodo.nextNode = this.nodo;
     this.nodo = nuevoNodo;
   }
+  size() {
+    let nodos = 1;
+    let actual = this.nodo;
+    if (actual === null) {
+      return 0;
+    } else {
+      while (actual.nextNode !== null) {
+        actual = actual.nextNode;
+        nodos++;
+      }
+    }
+    return nodos;
+  }
 }
 
 const lista = new LinkedList()
