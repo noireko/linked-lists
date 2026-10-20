@@ -26,16 +26,14 @@ class LinkedList {
     this.nodo = nuevoNodo;
   }
   size() {
-    let nodos = 1;
+    let nodos = 0;
     let actual = this.nodo;
-    if (actual === null) {
-      return 0;
-    } else {
-      while (actual.nextNode !== null) {
-        actual = actual.nextNode;
-        nodos++;
-      }
+
+    while (actual !== null) {
+      nodos++;
+      actual = actual.nextNode;
     }
+
     return nodos;
   }
 }
