@@ -36,6 +36,11 @@ class LinkedList {
 
     return nodos;
   }
+  head() {
+    let actual = this.nodo
+    if (actual === null) return undefined;
+    if (actual !== null) return actual.value;
+  }
 }
 
 const lista = new LinkedList()
