@@ -60,6 +60,15 @@ class LinkedList {
     }
     return undefined;
   }
+  pop() {
+    let actual = this.nodo;
+    if (actual !== null) {
+      let valorEl = actual.value;
+      this.nodo = actual.nextNode;
+      return valorEl;
+    }
+    return undefined;
+  }
 }
 
 const lista = new LinkedList()
