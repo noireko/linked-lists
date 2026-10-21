@@ -98,7 +98,5 @@ class LinkedList {
 }
 
 
-const lista = new LinkedList()
 
-lista.append("aaa");
 
