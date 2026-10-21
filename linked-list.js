@@ -66,7 +66,7 @@ class LinkedList {
       let valorEl = actual.value;
       this.nodo = actual.nextNode;
       return valorEl;
-    }
+    } 
     return undefined;
   }
 }
