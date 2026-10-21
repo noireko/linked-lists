@@ -1,0 +1,15 @@
+# Dependencias (se reinstalan con "npm install")
+node_modules/
+
+# Reportes de cobertura de Jest (npm test -- --coverage)
+coverage/
+
+# Logs
+npm-debug.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Variables de entorno
+.env
