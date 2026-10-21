@@ -66,8 +66,21 @@ class LinkedList {
       let valorEl = actual.value;
       this.nodo = actual.nextNode;
       return valorEl;
-    } 
+    }
     return undefined;
+  }
+  findIndex(value) {
+    let actual = this.nodo;
+    let index = 0;
+    while (actual !== null) {
+      if (actual.value === value) {
+        return index;
+      } else {
+        index++
+        actual = actual.nextNode;
+      }
+    }
+    return -1;
   }
 }
 
