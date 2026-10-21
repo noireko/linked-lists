@@ -83,21 +83,17 @@ class LinkedList {
     return -1;
   }
   toString() {
+    if (this.nodo === null) return "";
+
     let actual = this.nodo;
-    if (actual === null) return undefined;
-    let str = `( ${actual.value} )`;
+    let str = "";
+
     while (actual !== null) {
-      if (actual.nextNode !== null) {
-        actual = actual.nextNode;
-        str += ` -> ( ${actual.value} )`;
-      } else if (actual.nextNode === null) {
-        str += ` -> null`;
-        actual = actual.nextNode;
-      } else {
-        return undefined
-      }
+      str += `( ${actual.value} ) -> `;
+      actual = actual.nextNode;
     }
-    return str;
+
+    return str + "null";
   }
 }
 
