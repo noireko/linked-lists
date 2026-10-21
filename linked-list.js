@@ -72,14 +72,14 @@ class LinkedList {
   findIndex(value) {
     let actual = this.nodo;
     let index = 0;
+
     while (actual !== null) {
-      if (actual.value === value) {
-        return index;
-      } else {
-        index++
-        actual = actual.nextNode;
-      }
+      if (actual.value === value) return index;
+
+      index++;
+      actual = actual.nextNode;
     }
+
     return -1;
   }
 }
