@@ -82,7 +82,25 @@ class LinkedList {
 
     return -1;
   }
+  toString() {
+    let actual = this.nodo;
+    if (actual === null) return undefined;
+    let str = `( ${actual.value} )`;
+    while (actual !== null) {
+      if (actual.nextNode !== null) {
+        actual = actual.nextNode;
+        str += ` -> ( ${actual.value} )`;
+      } else if (actual.nextNode === null) {
+        str += ` -> null`;
+        actual = actual.nextNode;
+      } else {
+        return undefined
+      }
+    }
+    return str;
+  }
 }
+
 
 const lista = new LinkedList()
 
