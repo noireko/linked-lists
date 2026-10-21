@@ -114,4 +114,4 @@ npx jest --watch
 
 ## Créditos
 
-Proyecto basado en la consigna de [The Odin Project](https://www.theodinproject.com/).
+Proyecto basado en la consigna de [The Odin Project](https://www.theodinproject.com/lessons/javascript-linked-lists).
